@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Test') {
+            steps {
+                 echo " nawaz "
+            }
+        }  
+        stage('Build') {
+            steps {
+                echo 'Build'
+            }
+        }
+        stage('Deploy on Test Server') {
+            steps {
+                echo 'Deploy on Test Server'
+            }
+        }
+
+        stage('Depoly on prod') {
+            steps {
+                echo 'Depoly on prod'
+            }
+        }
+
+    }
+}
